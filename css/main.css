@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(./fontello.css);
+@import url(./normalize.css);
+
+/* 기본 박스 사이징 재 설정 
+(width에 border-width와 padding을 포함하여 계산) */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+/* 숨김 콘텐츠 */
+.a11y-hidden,.input-search,.legend{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  clip: rect(0,0,0,0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+/* CSS Module */
+/* float 이슈를 해결하기 위한 CSS 선언 */
+.clearfix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+/* 기본 설정 */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-size: 1.4rem;
+  color: #181818;
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  font-weight: 300;
+}
+li{
+    list-style: none;
+}
+/* 헤더 */
+/* 사이트유틸 */
+.siteutil{
+    background: #434343;
+}
+.siteutil-select-wrap{
+    float: left;
+    background: salmon;
+    width: 500px;
+}
+.member-list{
+    float: right;
+    background: blue;
+    width: 600px;
+}
+.siteutil-select{
+    background: dodgerblue;
+}
+.counlang,.currentcountry,.currentcountry,.currentlangs{
+    background:darkseagreen;
+    float:left;
+}
+.loginclick,.asignclick,.myreservation{
+    float: left;
+    background: darkkhaki;
+}
+.member-list{
+    background: deeppink;
+}
+.search-box{
+    width: 300px;
+    float: right;
+    background: darkred;
+}
+.search-box fieldset{
+    border: none;
+    
+}
+.member-list ul{
+    background: blue;
+    width: 300px;
+    float: left;
+}
+
+/* 메뉴섹션 */
+.menu-sec{
+    position: relative;
+    background: darkred;
+}
+.menu-logo{
+    float: left;
+}
+.menu-logo h1{
+    font-size: 0.5rem;
+}
+.menu-sec-content{
+    float:right;
+}
+.koreanlogo{
+    position: absolute;
+    top: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.koreanair{
+    font-size: 1rem;
+    margin-left: 20px;
+}
+.menu-sec-content{
+    background: blue;
+    
+}
