@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 /* 숨김 콘텐츠 */
-.a11y-hidden,.input-search,.legend{
+.a11y-hidden,.input-search,.search-box legend{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -46,16 +46,20 @@ li{
 /* 사이트유틸 */
 .siteutil{
     background: #434343;
+    height: 100px;
+    height: 35px;
 }
 .siteutil-select-wrap{
     float: left;
     background: salmon;
-    width: 500px;
+    width: 300px;
+    height:35px;
 }
 .member-list{
     float: right;
     background: blue;
     width: 600px;
+    height: 35px
 }
 .siteutil-select{
     background: dodgerblue;
@@ -76,6 +80,7 @@ li{
     float: right;
     background: darkred;
 }
+
 .search-box fieldset{
     border: none;
     
@@ -90,6 +95,7 @@ li{
 .menu-sec{
     position: relative;
     background: darkred;
+    height: 60px;
 }
 .menu-logo{
     float: left;
@@ -99,18 +105,46 @@ li{
 }
 .menu-sec-content{
     float:right;
+    background: blue;
+    height: 60px;
 }
-.koreanlogo{
-    position: absolute;
-    top: 0;
-    margin-left: 15px;
-    margin-top: 15px;
+.koreanlogo {
+    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-koreanair.png) no-repeat;
+    background-color: blueviolet;
+    display: block;
+    width: 215px;
+    height: 33px;
+    text-indent: -9999px;
 }
 .koreanair{
     font-size: 1rem;
     margin-left: 20px;
 }
-.menu-sec-content{
-    background: blue;
-    
+.menu-sec-content ul{
+   display:flex;
+   font-size:1.3rem;
+   font-weight: 400;
+}
+.menu-sec-wrap{
+    background: red;
+}
+.reservation-btn{
+    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-topMenu1.png) no-repeat;
+}
+.skypass-btn{ 
+    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-topMenu2.png) no-repeat;
+}
+.service-btn{
+    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-topMenu3.png) no-repeat;
+}
+.promotion-btn{
+    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-topMenu4.png) no-repeat;
+
+}
+.menu-sec-content div{
+     padding: 1px 15px 1px 1px;
+}
+.menu-sec-content button{
+    padding: 10px;
+    border: none;
 }
