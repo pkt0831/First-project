@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 /* 숨김 콘텐츠 */
-.a11y-hidden,.input-search,.search-box legend{
+.a11y-hidden,.search-shadow,.search-box legend{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -44,92 +44,165 @@ li{
 }
 /* 헤더 */
 /* 사이트유틸 */
-.siteutil{
+.site-util{
     background: #434343;
-    height: 100px;
-    height: 35px;
+    min-height: 35px;
+    color: white;
+    font-size: 11px;
 }
 .siteutil-select-wrap{
     float: left;
-    background: salmon;
-    width: 300px;
-    height:35px;
-}
-.member-list{
-    float: right;
-    background: blue;
-    width: 600px;
-    height: 35px
+    height: 100%;
+    /* background: salmon; */
+    color: white;
+    line-height: 35px;
 }
 .siteutil-select{
-    background: dodgerblue;
+    display: inline-block;
+    /* background: plum; */
+    padding: 0 5px 0 5px;
 }
-.counlang,.currentcountry,.currentcountry,.currentlangs{
-    background:darkseagreen;
-    float:left;
+.siteutil-select ul, .siteutil-select ul li{
+    display: inline-block;
 }
-.loginclick,.asignclick,.myreservation{
-    float: left;
-    background: darkkhaki;
-}
-.member-list{
-    background: deeppink;
-}
-.search-box{
-    width: 300px;
-    float: right;
-    background: darkred;
+.siteutil-select-wrap button{
+    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/btn-regionSelect.png) no-repeat;
+    background-position: 90% 60%;
+    margin:2px 0 0 0;
+    padding: 10px 25px 7px 10px;
+    cursor: pointer;
+    color: white;
+    border: 0;
 }
 
-.search-box fieldset{
-    border: none;
-    
+.currentcountry:nth-child(1)::after{
+    content: "|";
+    padding: 0 7px 0 7px;
+}
+.currentlangs{
+    text-decoration: underline;
+}
+.lang{
+    padding-left: 7px;
+}
+/* member list */
+.member-list{
+    /* background: blue; */
+    height: 35px;
+    line-height: 35px;
 }
 .member-list ul{
-    background: blue;
-    width: 300px;
     float: left;
+    padding-left: 820px;
+    /* background: darkslateblue; */
+}
+.member-list ul li{
+    /* background:palegreen; */
+    /* float: left; */
+    display: inline-block;
+       
+}
+.member-list ul li a{
+    margin-right:3px;
+    padding-left: 5px
+}
+.member-list ul li:nth-child(n+1)::after{
+    content: "|";
+    padding-left: 3px;
+}
+.member-list ul li:nth-child(4)::after{
+    content: "";
+}
+/* .search-box */
+.search-box{
+    float: right;
+    /* background: yellowgreen; */
+    height: 100%;
+}
+.search-box fieldset{
+    border: 0;
+    /* padding: 0 15px 0 15px; */
+}
+.input-search{
+    padding: 5px 50px 5px 10px;
+    position: relative;
+    margin-right: 15px;
+    font-size: 12px;
+}
+.btn{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/icon_n_search.png) no-repeat;
+    top: 8px;
+    right: 15px;
+    background-position: 0 0;
+    border: 0;
 }
 
 /* 메뉴섹션 */
 .menu-sec{
-    position: relative;
-    background: darkred;
     height: 60px;
+    /* background: black; */
 }
 .menu-logo{
     float: left;
+    margin: 12px 0 0 21px;
+    display: block;
+    width: 215px;
+    height: 33px;
+    position: relative;
+    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-koreanair.png) no-repeat;
 }
 .menu-logo h1{
     font-size: 0.5rem;
 }
-.menu-sec-content{
-    float:right;
-    background: blue;
-    height: 60px;
-}
 .koreanlogo {
-    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-koreanair.png) no-repeat;
-    background-color: blueviolet;
     display: block;
-    width: 215px;
-    height: 33px;
-    text-indent: -9999px;
+    top: 5px;
+    right: 45px;
+    position: absolute;
+    width: 170px;
+    height: 30px;
 }
 .koreanair{
     font-size: 1rem;
     margin-left: 20px;
 }
+.skyteam{
+    position: absolute;
+    top: 5px;
+    right:5px;
+    font-size: 2px;
+    display: block;
+    height: 30px;
+    width: 25px;
+}
+/* menu 콘테트 */
+.menu-sec{
+    border-bottom: 1px solid #181818;
+}
+.menu-sec-content{
+    float:right;
+    /* background: blue; */
+    height: 60px;
+    margin:10px 10px 0 0;
+}
 .menu-sec-content ul{
    display:flex;
-   font-size:1.3rem;
+   font-size:18px;
    font-weight: 400;
 }
+.menu-sec-content ul li button{
+    padding: 7px 10px 5px 35px
+}
 .menu-sec-wrap{
-    background: red;
+    /* background: red; */
 }
 .reservation-btn{
-    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-topMenu1.png) no-repeat;
+    background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-topMenu1.png) no-repeat;  
+
 }
 .skypass-btn{ 
     background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-topMenu2.png) no-repeat;
@@ -147,4 +220,83 @@ li{
 .menu-sec-content button{
     padding: 10px;
     border: none;
+    cursor: pointer;
+}
+/* 메인 */
+main{
+    min-height: 1507px;
+}
+/* 풋터 */
+footer{
+    min-height: 400px;
+    background: #2e4964;
+    color: white;
+    border-top: 1px solid #434343;
+}
+.footer-inner{
+    background: blueviolet;
+    padding: 50px 50px;
+}
+.footer-notice{
+    width: 100%;
+    height: 250px;
+    background: fuchsia;
+    line-height: 20px;
+    float: left;
+}
+.footer-notice h2{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.corporation{
+    font-size: 12px;
+    background: black;
+    width: 170px;
+    padding: 30px 30px 30px 30px;
+    margin: 0 30px 0 100px;
+    float:left;
+}
+.corporation ul,.rule ul,.other-navi ul,.customer-support ul{
+    border-left: 1px solid;
+}
+.rule{
+    font-size: 12px;
+    background: red;
+    width: 200px;
+    padding: 30px 30px 30px 30px;
+    float: left;
+}
+.rule img{
+    cursor: pointer;
+    vertical-align: middle;
+}
+.rule-img{
+    width: 20px;
+    height: 20px;
+}
+.other-navi{
+    font-size: 12px;
+    background: salmon;
+    padding: 30px 30px 30px 30px;
+    width: 170px;
+    float: left;
+}
+.customer-support{
+    font-size: 12px;
+    background: seagreen;
+    padding: 30px 30px 30px 18px;
+    float: left;
+    width: 170px;
+}
+.company-information{
+    font-size: 11px;
+    background: skyblue;
+    float: left;
+    width: 600px;
+    line-height: 20px;
+}
+.sns-area{
+    font-size: 5px;
+    background: blue;
+    width: 200px;
 }
