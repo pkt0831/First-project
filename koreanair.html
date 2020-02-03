@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>대한항공</title>
     <link rel="stylesheet" href="./css/main.css">   
-    <script src="./js/tab.js" defer></script>
+    <!--  <script src="./js/tab.js" defer></script> --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 </head>
 <body>
@@ -19,28 +19,28 @@
                     <h2 class="a11y-hidden">사이트 내 지역 언어 설정</h2>
                     <button>지역/언어</button>
                     <div class="siteutil-select">
-                        <span class="currentcountry">대한민국</span>
+                        <span class="current-country">대한민국</span>
                         <ul>
-                            <li><span class="currentlangs">한국어</span></li>
-                            <li><a href="" class="lang">English</a></li>
+                            <li><span class="current-langs">한국어</span></li>
+                            <li><a href="#" class="lang">English</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="member-list">
+                <div class="member-list clearfix">
                     <!-- 네이밍 -->
                     <ul>
-                        <li><a href="" >로그인</a></li>
-                        <li><a href="" >회원가입</a></li>
-                        <li><a href="" >나의 예약</a></li>
-                        <li><a href="" >위시리스트</a></li>
+                        <li><a href="#" >로그인</a></li>
+                        <li><a href="#" >회원가입</a></li>
+                        <li><a href="#" >나의 예약</a></li>
+                        <li><a href="#" >위시리스트</a></li>
                     </ul>
                     <div class="search-box">
                         <form action="검색">
                             <fieldset>
                                 <legend>검색 폼</legend>
-                            <label for="input-search" class="search-shadow">검색</label>
-                            <input name="search" type="text" placeholder="검색" class="input-search" required >
-                            <button type="submit" class="btn"></button>
+                                <label for="inputSearch" class="search-shadow">검색</label>
+                                <input name="search" type="text" placeholder="검색" class="input-search" id="inputSearch" required >
+                                <button type="submit" class="search-btn"></button>
                             </fieldset>
                         </form>
                     </div>
@@ -49,8 +49,7 @@
             <div class="menu-sec clearfix">
                 <div class="menu-logo">
                         <h1 class="a11y-hidden">대한항공</h1>
-                        <a title="Korean Air" href="" class="koreanlogo">
-                        </a>
+                        <a title="Korean Air" href="" class="koreanlogo"></a>
                     <!-- <img src="https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-koreanair.png" 
                             alt="" class="koreanlogo"> -->
                     <!-- 숨김처리 후 a태그 이미지넣기 -->
@@ -61,10 +60,10 @@
                 <nav class="menu-sec-content">
                     <ul>
                         <!-- 일단 위에 방법3 탭 도전 안되면 안해도됨.여러가지 목록들 -->
-                        <li class="menu-reservation"><button class="reservation-btn">항공권 예매</button></li>
-                        <li class="menu-skypass"><button class="skypass-btn">스카이 패스</button></li>
-                        <li class="menu-service"><button class="service-btn">서비스 안내</button></li>
-                        <li class="menu-promotion"><button class="promotion-btn">프로모션/여행상품</button></li>
+                        <li><button class="reservation-btn">항공권 예매</button></li>
+                        <li><button class="skypass-btn">스카이 패스</button></li>
+                        <li><button class="service-btn">서비스 안내</button></li>
+                        <li><button class="promotion-btn">프로모션/여행상품</button></li>
                     </ul>
                 </nav>
             </div>
@@ -102,77 +101,78 @@
         </main>
         <!-- footer -->
         <footer>
-            <div class="footer-inner">
+            <div class="inner">
                 <!-- 위에 부분 -->
-                <div class="footer-notice">
-                    <div class="corporation">
+                <div class="footer-notice clearfix">
+                    <div>
                         <h2>회사소개</h2>
                         <ul>
-                            <li><a href="">대한항공에대하여</a></li>
-                            <li><a href="">기업지배구조</a></li>
-                            <li><a href="">투자정보</a></li>
-                            <li><a href="">지속가능경영</a></li>
-                            <li><a href="">뉴스룸 새 창 열기</a></li>
-                            <li><a href="">공지사항</a></li>
+                            <li><a href="#">대한항공에대하여</a></li>
+                            <li><a href="#">기업지배구조</a></li>
+                            <li><a href="#">투자정보</a></li>
+                            <li><a href="#">지속가능경영</a></li>
+                            <li><a href="#">뉴스룸 새 창 열기</a></li>
+                            <li><a href="#">공지사항</a></li>
                         </ul>
                     </div>
-                    <div class="rule">
+                    <div>
                         <h2>약관 및 규정</h2>
                         <ul>
-                            <li><a href="">개인정보 처리방침</a><img title="새창열기" class="rule-img" src="https://www.koreanair.com/content/dam/koreanair/Global/icons/00_MenuIcons/footer_kisa.png" alt=""></li>
-                            <li><a href="">회원약관</a></li>
-                            <li><a href="">운송약관</a></li>
-                            <li><a href="">소비자 안전 관련 정보 공개</a></li>
-                            <li><a href="">운임 및 서비스 요금표</a></li>
+                            <li><a href="#">개인정보 처리방침</a><img title="새창열기" class="rule-img" src="https://www.koreanair.com/content/dam/koreanair/Global/icons/00_MenuIcons/footer_kisa.png" alt=""></li>
+                            <li><a href="#">회원약관</a></li>
+                            <li><a href="#">운송약관</a></li>
+                            <li><a href="#">소비자 안전 관련 정보 공개</a></li>
+                            <li><a href="#">운임 및 서비스 요금표</a></li>
                         </ul>
                     </div>
-                    <div class="other-navi">
+                    <div>
                         <h2>기타 안내</h2>
                         <ul>
-                            <li><a href="">기타 안내 서비스</a></li>
-                            <li><a href="">항공교통이용자 서비스 계획</a></li>
-                            <li><a href="">항공교통이용자 피해구제</a></li>
-                            <li><a href="">관련 사이트</a></li>
-                            <li><a href="">사이트맵</a></li>
+                            <li><a href="#">기타 안내 서비스</a></li>
+                            <li><a href="#">항공교통이용자 서비스 계획</a></li>
+                            <li><a href="#">항공교통이용자 피해구제</a></li>
+                            <li><a href="#">관련 사이트</a></li>
+                            <li><a href="#">사이트맵</a></li>
                         </ul>
                     </div>
-                    <div class="customer-support">
+                    <div>
                         <h2>고객지원</h2>
                         <ul>
-                            <li><a href="">지점 연락처</a></li>
-                            <li><a href="">고객의 말씀</a></li>
-                            <li><a href="">FAQ</a></li>
-                            <li><a href="">e 서식함</a></li>
-                            <li><a href="">채팅 서비스</a></li>
+                            <li><a href="#">지점 연락처</a></li>
+                            <li><a href="#">고객의 말씀</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">e 서식함</a></li>
+                            <li><a href="#">채팅 서비스</a></li>
                         </ul>
                     </div>
                 </div>
                 <!-- 회사,sns 묶음 -->
                 <div class="info-sns">
-                <!-- 회사정보 -->
-                <div class="company-information">(주) 대한항공 | 대표이사 : 우기홍 외 1명 | 주소 : 서울특별시 강서구 하늘길 260 | 대표전화 : 1588-2001 / 02-2656-2001
+                    <!-- 회사정보 -->
+                    <div class="company-information">
+                    (주) 대한항공 | 대표이사 : 우기홍 외 1명 | 주소 : 서울특별시 강서구 하늘길 260 | 대표전화 : 1588-2001 / 02-2656-2001
                     사업자 등록번호 : 110-81-14794 | 통신판매업신고 : 강서 제 16-3010 | 개인정보보호책임자 : 여객사업본부장 이진호 전무 
                     © 1997-2020 KOREAN AIR</div>
-                <!-- SNS 로고 -->
-                <div class="sns-area">
-                 <ul>
-                    <li>
-                        <a href="#"><span class="facebook">페이스북</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="twitter">트위터</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="instagram">인스타그램</span></a>
-                    </li>
-                    <li>
-                       <a href="#"> <span class="youtube">유튜브</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><span class="korean facebook">대한항공페이스북</span></a>
-                    </li>
-                 </ul> 
-                </div>
+                    <!-- SNS 로고 -->
+                    <div class="sns-area">
+                        <ul>
+                            <li>
+                                <a href="#" class="facebook" title="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="twitter" title="Twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="instagram" title="Instagram"></a>
+                            </li>
+                            <li>
+                            <a href="#" class="youtube" title="Youtube"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="blog-korea" title="blog-korea"></a>
+                            </li>
+                        </ul> 
+                    </div>
               </div>
             </div>
         </footer>
