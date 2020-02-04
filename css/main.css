@@ -122,7 +122,6 @@ li{
     float: right;
     /* background: yellowgreen; */
     height: 100%;
-    margin: 0 3px 0 3px;
 }
 .search-box fieldset{
     border: 0;
@@ -190,8 +189,9 @@ li{
     float:right;
     height: 60px;
     margin:10px 10px 0 0;
+    position: relative;
 }
-.menu-sec-content ul{
+.menu-sec-content>ul{
    display:flex;
    font-size:18px;
    font-weight: 400;
@@ -208,6 +208,9 @@ li{
 }
 .reservation-btn:hover{
     background: url("https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-topMenu1-active.png") no-repeat 0 0;
+}
+.menu-reservation-sub{
+    position: absolute;
 }
 .skypass-btn{ 
     background: url("https://www.koreanair.com/etc/clientlibs/koreanair/images/components/bookingbar/top-nav-topMenu2.png") no-repeat;
@@ -367,4 +370,201 @@ footer{
     background: url(https://www.koreanair.com/etc/clientlibs/koreanair/images/components/footer/icon-blog.png) no-repeat;
     height: 27px;
     position: absolute;
+}
+/* 서브메뉴 */
+/* 서브메뉴 */
+/* 항공권 예매 메뉴 */
+.menu-reservation-sub{
+    height: 255px;
+    width: 980px;
+    background: white;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 35px 0 30px; 
+    position: absolute;
+    top: 50px; 
+    right: 0px;
+    font-size: 14px;
+    font-weight: 700; 
+    border: 1px solid rgb(204,204, 204);
+    background: white;
+    /* display: none; */
+}
+.blue-bold-heading{
+    color:#186686;
+}
+.menu-reservation-sub div{
+    width: 20%;
+    line-height: 30px;
+    padding: 20px 0px;
+}
+.air-reservation{
+    height: 240px;
+}
+.reservation-bonus{
+    height: 240px;
+}
+.reservation-gift{
+    height: 240px;
+}
+.menu-reservation-sub button{
+    width: 40px;
+}
+.reservation-research{
+    height: 125px; 
+}
+.reservation-notice{
+    height: 250px;
+}
+.reservation-map{
+    height: 115px;
+}
+.menu-reservation-sub button{
+    position: absolute;
+    right: 5px;
+    top: 24px;
+    background: url("https://www.koreanair.com/etc/clientlibs/koreanair/images/close-button.jpg") no-repeat;  
+    height: 20px;
+    width: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* 스카이패스 메뉴*/
+.skypass-btn-sub{
+    height: 255px;
+    width: 980px;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 14px;
+    font-weight: 700; 
+    border: 1px solid rgb(204,204, 204);
+    position: absolute;
+    top:30px;
+    right:0;
+    padding: 10px;
+    display: none;
+    background: white;
+}
+.skypass-btn-sub div{
+    width: 25%;
+    line-height: 27px;
+    /* padding: 20px 0 25px 20px */
+}
+.skypass-member{
+    height: 240px;
+}
+.skypass-Mileage{
+    height: 240px;
+}
+.skypass-bonus{
+    /* background: purple; */
+    height: 240px;
+}
+.skypass-nonair-bonus{
+    height: 240px;
+}
+.skypass-btn-sub button{
+    background: url("https://www.koreanair.com/etc/clientlibs/koreanair/images/close-button.jpg") no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 5px;
+    top: 24px;
+    padding: 0 10px 15px 0;
+}
+/* 서비스 안내 */
+.service-btn-sub{
+    height: 255px;
+    width: 980px;
+    border: 1px solid rgb(204,204, 204);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    padding: 10px;
+    background: white;
+}
+.service-btn-sub div{
+    width: 20%;
+    line-height: 29px;
+}
+.service-boarding{
+    height: 192px;
+}
+.service-navi{
+    margin-top: 12px;
+}
+.service-baggage{
+    height: 192px;
+}
+.service-gift{
+    margin-top: 12px;
+}
+.service-customer{
+    height: 192px;
+}
+.service-coatroom{
+    margin-top: 12px;
+}
+.service-info{
+    height: 192px;
+}
+.service-class{
+}
+.service-btn-sub button{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 5px;
+    top: 24px;
+    background: url("https://www.koreanair.com/etc/clientlibs/koreanair/images/close-button.jpg") no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+/* 프로모션 */
+.promotion-btn-sub{
+    height: 255px;
+    width: 980px;
+    border: 1px solid rgb(204,204, 204);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    flex-flow:column wrap;
+    padding: 10px;
+    position: relative;
+    background: white;
+}
+.promotion-btn-sub div{
+    width: 25%;
+    line-height: 30px;
+}
+.promotion-event{
+}
+.promotion-special{
+    margin-bottom: 160px;
+}
+.promotion-boadpass{
+    
+}
+.promotion-program{
+    margin-bottom: 160px;
+}
+.promotion-air-service{
+}
+.promotion-product{
+}
+.promotion-btn-sub button{
+    height: 20px;
+    width: 20px;
+    background: url("https://www.koreanair.com/etc/clientlibs/koreanair/images/close-button.jpg") no-repeat;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 24px;
 }
