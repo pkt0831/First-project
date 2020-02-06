@@ -1,0 +1,54 @@
+/* 기본 박스 사이징 재설정 (width에 border-width와 padding을 포함하여 계산) */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* FLOAT CLEARFIX */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* 숨김 콘텐츠 */ 
+.a11y-hidden, legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+
+/* 버튼 bg주고 글자날리기 */
+.btn-hide {
+  display: inline-block;
+  margin: 0;
+  border: none;
+  width: 15px;
+  height: 0;
+  padding-top: 15px;
+  overflow: hidden; 
+  vertical-align: middle;
+  font-size: 10rem;
+}
+
+/* 제목 글자 색깔 조정, 크기 조정 */
+.blue-bold-heading{
+  color:#186686;
+  font-size: 1rem;
+  font-weight: bold;
+}
