@@ -1,4 +1,4 @@
 # project
-![캡처_2020_05_10_19_49_28_212](https://user-images.githubusercontent.com/56964928/81497141-8db13600-92f7-11ea-999a-b3d491b4903a.png)
+![캡처_2020_05_10_19_56_53_102](https://user-images.githubusercontent.com/56964928/81497297-86d6f300-92f8-11ea-9e09-d2bf3230ab50.png)
 # koreanair_clone
 https://www.koreanair.com/ clone page team project
